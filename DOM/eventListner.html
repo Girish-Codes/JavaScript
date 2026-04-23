@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Content</title>
+    <style>
+        body {
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <h3>Dom Content</h3>
+    <input type="text" id="text" placeholder="Enter The Text">
+    <script>
+        //Keyboard Events
+        const ev = document.getElementById("text");
+        ev.addEventListener("keydown", (event) => {
+            console.log(`Key Pressed is ${event.key}`);
+        })
+
+        ev.addEventListener("keyup", (event) => {
+            console.log(`Key Pressed is ${event.key}`);
+        })
+
+        ev.addEventListener("keypress", (event) => {
+            console.log(`Key Pressed is ${event.key}`);
+        })
+        // wiindow events
+        document.addEventListener("DOMContentLoaded", () => {
+            alert("Document Loaded Successfully.");
+        })
+
+        window.addEventListener("resize", () => {
+            alert("Window cann't resized.");
+        })
+
+        window.addEventListener("scroll", () => {
+            console.log("User is scrolling.");
+        })
+    </script>
+</body>
+</html>

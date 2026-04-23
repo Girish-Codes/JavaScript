@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="addHighlight()">Add Highlight</button>
+    <button onclick="removeHighlight()">Remove Highlight</button>
+    <button onclick="toggleHighlight()">Toggle Highlight</button>
+    <button onclick="checkHighlight()">Check Highlight</button>
+
+    <script>
+        let b = document.querySelector("body");
+        function addHighlight(){
+            b.classList.add("body");
+        }
+        function removeHighlight(){
+            b.classList.remove("body");
+        }
+        function toggleHighlight(){
+            b.classList.toggle("body");
+        }
+        function checkHighlight(){
+
+            if(b.classList.contains("body")){
+                alert("Highlight is applied");
+            } else {
+                alert("Highlight isn't applied");
+            }
+        }
+        
+    </script>
+</body>
+</html>

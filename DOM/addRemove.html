@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 200px;
+            background-color: aqua;
+            border: black solid 2px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="addBox()">Add Box</button>
+    <button onclick="removeBox()">Remove Box</button>
+    <br><br>
+    <div></div>
+    <br>
+    <script>
+        function addBox(){
+            let b = document.querySelector("body");
+            let myDiv = document.createElement("div");
+            b.appendChild(myDiv);
+        }
+        document.writeln("<br>")
+        function removeBox(){
+            let b = document.querySelector("body");
+            let myDiv = document.querySelector("div");
+            b.removeChild(myDiv);
+        }
+    </script>
+</body> 
+</html>

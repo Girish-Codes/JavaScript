@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: auto;
+        }
+        #inside-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+            justify-content: center;
+            height: 50vh;
+        }
+        email-success:focus {
+            border: 2px solid green;
+
+        }
+        email-error:focus {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form id="emailForm">
+            <div id="inside-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <div id="emailFeedback"></div>
+            <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        const emailInput = document.getElementById('email');
+        const emailFeedback = document.getElementById('emailFeedback');
+
+        emailInput.addEventListener('input', function() {
+            const emailValue = emailInput.value;
+            if (validateEmail(emailValue)) {
+                emailInput.classList.remove('email-error');
+                emailInput.classList.add('email-success');
+                emailFeedback.textContent = 'Valid email address.';
+                emailFeedback.style.color = 'green';
+            } else {
+                emailInput.classList.remove('email-success');
+                emailInput.classList.add('email-error');
+                emailFeedback.textContent = 'Invalid email address.';
+                emailFeedback.style.color = 'red';
+            }
+        });
+
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(String(email).toLowerCase());
+        }
+    </script>
+</body>
+</html>

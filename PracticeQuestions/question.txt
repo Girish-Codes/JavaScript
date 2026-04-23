@@ -1,0 +1,106 @@
+// If Statement - A student is eligible for voting if age ≥ 18.
+
+
+
+
+
+
+//If-Else Statement - Write a program to check if a number is positive or negative.
+
+
+
+
+
+
+
+
+//If-Else Ladder- Check if a number is positive, negative, or zero.
+
+
+
+
+
+
+
+
+//Nested If - A student passes if marks ≥ 40. If marks ≥ 80, show “Distinction”.
+
+
+
+
+
+
+
+
+//Switch Case 1. Print the grade based on letter (A=Excellent, B=Good, C=Average, D=Poor).
+
+
+//2. print the season based on months in the year (3,4,5 - summer) (11,12,1,2 - winter) (6,7,8,9 - rainy)
+
+
+
+
+
+
+
+
+
+
+
+
+//---------- Looping constructs ---------------------
+
+
+
+
+//For Loop - Print the first 10 natural numbers.
+
+
+
+
+//While Loop - Print numbers from 1 to 5 using while loop.
+
+
+
+
+//Do-While Loop: ATM machine: Keep asking PIN until the user enters 1234.
+
+
+
+
+
+
+//For…of Loop - Print all fruits in a basket. 
+
+
+
+
+//For…in - Print all student details from an object.
+
+
+
+
+//forEach Loop - Print the squares of all numbers in an array.
+
+
+
+
+
+
+// ------------------ control flow modifiers-----------------------
+
+
+
+
+//Print first 5 Natural numbers
+
+
+
+
+//Break Statement - Question: Stop printing when number reaches 3.
+
+
+
+
+//Continue Statement -Question: Skip printing number 3.
+

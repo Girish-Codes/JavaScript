@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Content</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <p id="id">Hello All</p>
+    <p>Thnak You</p>
+
+    <script>
+        document.querySelector("h1").innerHTML = "<i>Welcome Kodnest</i>"
+        document.querySelector("p").style.color = "red";
+        document.getElementById("id").innerText = "How Are You?";
+        document.getElementsByTagName("p")[1].textContent = "smile:)";
+    </script>
+</body>
+</html>

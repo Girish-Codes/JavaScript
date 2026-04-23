@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Register Form</h1>
+    <form>
+        <!-- Username validation - no numbers only alpha
+     alpha - Uppercase , not empty , min 2 and max 100 -->
+     <label> User name: </label>
+     <input type="text" id="name" oninput="toUpperCaseInput()" name="username">
+     <br><br>
+     <label> Email: </label>
+     <input type="email" id="email" name="email">
+     <br><br>
+     <label> password: </label>
+     <input type="text" id="password" name="username">
+
+
+     <br>
+     <br>
+     <input type="submit"> 
+    </form>
+
+
+    <script>
+        function toUpperCaseInput() {
+            const input =  document.getElementById("name");
+            input.value = input.value.toUpperCase();
+        }
+
+
+            f = document.querySelector("form");
+            f.addEventListener("submit", (e) => {
+                e.preventDefault();
+
+
+                let Username = document.getElementById("name").value.trim();
+
+
+                let regex = /^[a-zA-Z]+$/;
+
+
+                if(Username === "") {
+                    alert("Should not be empty")
+                }
+                else if(Username.length < 2){
+                    alert("Min of 3 cahareters")
+                }
+                else if(Username.length > 100){
+                    alert("Max of 100 cahareters")
+                }
+                else if(!regex.test(Username)){
+                    alert("Not valid")
+                }
+                else {
+                    alert("Vaild")
+                }
+
+                let emailRegex = /^[a-zA-Z@]$/;
+
+                let email = document.getElementById('email');
+
+                if(email === "") {
+                    alert("Should not be empty")
+                }
+                else if(email.length < 2){
+                    alert("Min of 3 cahareters")
+                }
+                else if(email.length > 100){
+                    alert("Max of 100 cahareters")
+                }
+                else if(!regex.test(email)){
+                    alert("Not valid")
+                }
+                else {
+                    alert("Vaild")
+                }
+
+
+            })
+    </script>
+    
+</body>
+</html>
