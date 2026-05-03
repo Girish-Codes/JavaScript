@@ -1,0 +1,30 @@
+body{
+    background-color: hsl(236, 74%, 68%);
+}
+
+#counterLabel{
+    display: block;
+    font-size: 5rem;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+#btnContainer{
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.btns{
+    background-color: hsl(236, 79%, 64%);
+    font-size: 1.5em;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btns:hover{
+    background-color: hsl(236, 79%, 44%);
+}
