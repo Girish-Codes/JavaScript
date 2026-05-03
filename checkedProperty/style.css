@@ -1,0 +1,21 @@
+#submitbtn{
+    background-color: hsl(180, 69%, 70%);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#submitbtn:hover{
+    background-color: hsl(180, 69%, 50%);
+}
+
+p{
+    color: rgb(45, 141, 238);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    font-family: monospace;
+}
